@@ -9,7 +9,6 @@ Entorno de Vite con Rollup, ultra fast.
 * VueJs v3 y Typescript
 * Composition API
 * Metodología BEM
-* Vue Class Components
 * Vuex
 * Vue Router
 * SASS
