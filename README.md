@@ -1,27 +1,55 @@
-# Vue 3 + Typescript + Vite
+# Pokedex - Reto técnico de Global66
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+## Descripción
 
-## Recommended IDE Setup
+Este proyecto es corresponde a la etapa de evaluación en Global66.
+Realizado con Vue3, código escalable y totalmente organizado.
+Entorno de Vite con Rollup, ultra fast.
 
-[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
+* VueJs v3 y Typescript
+* Metodología BEM
+* Vue Class Components
+* Vuex
+* Vue Router
+* SASS
+* Consumo de API https://pokeapi.co/api/v2/pokemon/
 
-### If Using `<script setup>`
+## Lanzar proyecto
 
-[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
+Ejecutar los siguientes comandos en orden luego de clonarlo
+```
+npm i
+npm run serve
+```
 
-## Type Support For `.vue` Imports in TS
+## Librerías usadas
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
+* vue-router: Complemento de VueJs para el manejo de las rutas
 
-### If Using Volar
+```js
+npm install vue-router
+```
 
-Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
+* vuex: Complemento de VueJs para el manejo de estados globales
 
-### If Using Vetur
+```js
+npm install vuex
+```
 
-1. Install and add `@vuedx/typescript-plugin-vue` to the [plugins section](https://www.typescriptlang.org/tsconfig#plugins) in `tsconfig.json`
-2. Delete `src/shims-vue.d.ts` as it is no longer needed to provide module info to Typescript
-3. Open `src/main.ts` in VSCode
-4. Open the VSCode command palette
-5. Search and run "Select TypeScript version" -> "Use workspace version"
+* axios: Paquete para hacer peticiones http
+
+```js
+npm install axios
+```
+
+* animate.css: Paquete que brinda animaciones css en forma de clases
+
+```js
+npm install animate.css
+```
+
+* vite-svg-loader: Loader para la carga de archivos svg
+
+```js
+npm install vite-svg-loader
+```
