@@ -1,0 +1,23 @@
+@import @/styles/mixins
+
+.fab
+  width: 44px
+  height: 44px
+  border-radius: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+
+  @include use-theme(background-color, $white-2)
+
+  &:hover
+    @include use-theme(background-color, $white-1)
+
+    &-unchecked,
+    &-checked
+      width: 26px
+      height: 26px
+
+  &-input
+    display: none

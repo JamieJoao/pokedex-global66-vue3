@@ -1,0 +1,31 @@
+@import @/styles/mixins
+
+.input
+  height: 50px
+  border-radius: 5px
+  padding: 0 16px
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .04)
+  display: flex
+  align-items: center
+
+  @include use-font(Montserrat)
+  @include use-theme(color, $gray-1)
+  @include use-theme(background-color, $neutral)
+
+  &-element
+    width: 100%
+    border: none
+    outline: none
+    font-size: 16px
+    font-weight: 500
+
+    @include use-theme(background-color, $neutral)
+
+    &::placeholder
+      @include use-theme(color, $gray-3)
+
+  &-icon
+    font-size: 18px
+    margin-right: 10px
+
+    @include use-theme(color, $gray-3)

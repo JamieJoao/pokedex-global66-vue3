@@ -1,0 +1,14 @@
+@import variables
+
+@mixin use-media($range, $size)
+  @media (#{$range}-width: $size)
+    @content
+
+@mixin use-theme($property, $value, $transition: true)
+  #{$property}: $value
+
+  @if $transition == true
+    transition: $property .3s linear
+
+@mixin use-font($font)
+  font-family: $font

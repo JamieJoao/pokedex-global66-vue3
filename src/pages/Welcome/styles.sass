@@ -1,0 +1,42 @@
+@import @/styles/mixins
+@import @/styles/variables
+
+.welcome
+  position: relative
+  width: 100%
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+  padding-left: 24px
+  padding-right: 24px
+
+  @include use-font(lato)
+
+  &-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+  &-image
+    width: 325px
+
+  &-greeting
+    font-size: 26px
+    font-weight: bold
+    margin-top: 60px
+
+    @include use-theme(color, $gray-1)
+    @include use-media(max, $xs)
+      margin-top: 30px
+
+  &-description
+    font-size: 18px
+    font-weight: 500
+    margin-top: 30px
+    text-align: center
+
+  .button-started
+    margin-top: 50px

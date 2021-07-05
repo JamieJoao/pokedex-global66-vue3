@@ -1,0 +1,22 @@
+@import @/styles/mixins
+
+.home
+  &-input
+    margin-top: 35px
+
+    &::placeholder
+      @include use-theme(color, $gray-3)
+
+  @include use-font(lato)
+
+  &-list
+    margin-top: 40px
+    margin-bottom: 100px
+
+  &-loader
+    width: 106px
+    height: 106px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
