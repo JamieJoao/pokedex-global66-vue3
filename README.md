@@ -20,7 +20,7 @@ Entorno de Vite con Rollup, ultra fast.
 Ejecutar los siguientes comandos en orden luego de clonarlo
 ```
 npm i
-npm run serve
+npm run dev
 ```
 
 ## Librerías usadas
